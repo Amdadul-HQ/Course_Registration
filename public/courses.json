@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "title": "Introduction to C Programming",
+      "description": "Learn the fundamentals of C programming language, including data types, control flow, and functions.",
+      "price": 10000,
+      "credit": 3,
+      "img": "./images/cprogramming.png"
+    },
+    {
+      "id": 2,
+      "title": "Introduction to Algorithms",
+      "description": "Master the essential algorithms and data structures used in computer science.",
+      "price": 15000,
+      "credit": 4,
+      "img": "./images/algorithm.png"
+    },
+    {
+      "id": 3,
+      "title": "Introduction to C++ for DSA",
+      "description": "Get introduced to C++ programming language focusing on its applications in Data Structures and Algorithms.",
+      "price": 25000,
+      "credit": 5,
+      "img": "./images/c++.png"
+    },
+    {
+      "id": 4,
+      "title": "Basic Data Structures",
+      "description": "Learn the fundamental data structures such as arrays, linked lists, stacks, and queues.",
+      "price": 30000,
+      "credit": 6,
+      "img": "./images/dataStructure.png"
+    },
+    {
+      "id": 5,
+      "title": "Introduction to OOP Python",
+      "description": "Discover the basics of Object-Oriented Programming (OOP) using Python programming language.",
+      "price": 18000,
+      "credit": 7,
+      "img": "./images/python.png"
+    },
+    {
+      "id": 6,
+      "title": "Software Engineering",
+      "description": "Learn the principles and practices of software engineering including requirements analysis, design, testing, and maintenance.",
+      "price": 21000,
+      "credit": 5,
+      "img": "./images/softwore.png"
+    },
+    {
+      "id": 7,
+      "title": "AWS, Cloud Computing",
+      "description": "Explore Amazon Web Services (AWS) and cloud computing principles, services, and best practices.",
+      "price": 35000,
+      "credit": 6,
+      "img": "./images/aws.png"
+    },
+    {
+      "id": 8,
+      "title": "Database (MySQL)",
+      "description": "Learn the basics of database management using MySQL including querying, normalization, and database design.",
+      "price": 19000,
+      "credit": 5,
+      "img": "./images/database.png"
+    },
+    {
+      "id": 9,
+      "title": "Problem-Solving Part",
+      "description": "Enhance your problem-solving skills with a variety of algorithms, data structures, and techniques.",
+      "price": 23000,
+      "credit": 8,
+      "img": "./images/problemSolving.png"
+    }
+  ]
+  
