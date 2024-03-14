@@ -17,7 +17,9 @@ const Main = () => {
             return alert('You Can Not Select A Course Twice')
         }
         const addCourses = [...selectCourses,coures]
-        
+        if(credit+coures.credit > 10){
+            return alert('only 10 Credit Allow')
+        }
         setSelectCourses(addCourses)
         
         setCredit(credit + coures.credit)
