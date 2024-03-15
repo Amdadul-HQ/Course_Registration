@@ -23,7 +23,7 @@ const Course = ({course,handleSelectCourse}) => {
                 </div>
             </div>
             <div>
-            <button onClick={() => {handleSelectCourse(course); setIsSelect(!isSelect) }} className='bg-[#2F80ED] w-full text-white text-lg font-semibold py-2 rounded-lg'>{ isSelect ? 'Remove' : 'Select' }</button>
+            <button onClick={() => {handleSelectCourse(course,title); setIsSelect(!isSelect) }} className='bg-[#2F80ED] w-full text-white text-lg font-semibold py-2 rounded-lg'>{ isSelect ? 'Remove' : 'Select' }</button>
             </div>
         </div>
     );

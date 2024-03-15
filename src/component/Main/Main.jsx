@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
+import { addToLocalStorage, getLocalStroageItems } from '../../utility/localstroage';
 
 const Main = () => {
     const [selectCourses,setSelectCourses] = useState([]);
@@ -16,7 +17,7 @@ const Main = () => {
     
 
 
-    const handleSelectCourse = (coures) => {
+    const handleSelectCourse = (coures,title) => {
 
 
         if(selectCourses.includes(coures)){
@@ -26,6 +27,8 @@ const Main = () => {
         if(credit+coures.credit > 10){
            return toast.error("Only 10 Credit Allow");
         }
+        const storeCoures = getLocalStroageItems()
+        addToLocalStorage(title)
         toast.success("Successfully Selected")
         setSelectCourses(addCourses)
         
