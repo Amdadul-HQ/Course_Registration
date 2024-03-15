@@ -1,9 +1,10 @@
 import { BsCurrencyDollar } from "react-icons/bs";
 import { IoBookOutline } from "react-icons/io5";
 import PropTypes from 'prop-types';
+import { useState } from "react";
 
 const Course = ({course,handleSelectCourse}) => {
-
+    const [isSelect,setIsSelect] =useState(false)
     const {title,description,price,credit,img} = course
 
     return (
@@ -22,7 +23,7 @@ const Course = ({course,handleSelectCourse}) => {
                 </div>
             </div>
             <div>
-            <button onClick={() => handleSelectCourse(course)} className='bg-[#2F80ED] w-full text-white text-lg font-semibold py-2 rounded-lg'>Select</button>
+            <button onClick={() => {handleSelectCourse(course); setIsSelect(!isSelect) }} className='bg-[#2F80ED] w-full text-white text-lg font-semibold py-2 rounded-lg'>{ isSelect ? 'Remove' : 'Select' }</button>
             </div>
         </div>
     );
@@ -30,6 +31,7 @@ const Course = ({course,handleSelectCourse}) => {
 
 Course.propTypes = {
     course:PropTypes.object.isRequired,
-};
+    handleSelectCourse:PropTypes.func.isRequired
+};  
 
 export default Course;
